@@ -1,0 +1,11 @@
+1. HTML Änderungen ansagen
+	- app.js
+	- src / public folder
+	- app.scss
+	- gulpfile änderungen
+
+2. Basic App.css content in sass migrieren
+
+3. colors.scss anlegen
+
+4. 

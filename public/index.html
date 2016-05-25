@@ -2,66 +2,42 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<title>Board Tool</title>
+	<title>boardmon.io</title>
 	<meta content="" name="description"/>
 	<meta content="" name="author"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="/css/app.css">
+	<link rel="stylesheet" href="/css/nouislider.min.css">
 </head>
 
 <body>
 
+	<!-- Facebook share stuff -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.5";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- END Facebook share stuff -->
+
+	<!-- Twitter share stuff -->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	<!-- END Twitter share stuff -->
+
     <div class="container">
 
         <div class="content">
-            <div class="content__header">
-                <div class="content__header__sort-by">
-                    <div class="content__header__sort-by--image">
-                        <img src="img/Sort_By_Icon.png">
-                    </div>
-                    <div class="content__header__sort-by--text">
-                       <span>Popularity</span>
-                    </div>
-                    <div class="content__header__sort-by--order">
-                        <img src="img/Sort_Direction_Upwards.png">
-                    </div>
-
-                </div>
-                <div class="content__header__description">
-                    <span>210 Boards found</span>
-                </div>
-            </div>
+            <bm-header></bm-header>
+            <bm-content :boards="matchingBoards"></bm-content>
         </div>
 
-        <div class="sidemenu">
-            <div class="sidemenu__logo">
-                <div class="sidemenu__logo--img">
-                    <img src="/img/Logo.png">
-                </div>
-                <div class="sidemenu__logo--caption">
-                    <span>BETA</span>
-                </div>
-            </div>
-            <div class="sidemenu__content">
-
-            </div>
-            <div class="sidemenu__footer">
-                <div class="sidemenu__footer__shares">
-                    <div class="sidemenu__footer__shares--item"><img src="img/facebook.png"></div>
-                    <div class="sidemenu__footer__shares--item"><img src="img/twitter.png"></div>
-                    <div class="sidemenu__footer__shares--item"><img src="img/email.png"></div>
-                </div>
-                <div class="sidemenu__footer--suggest">
-                    <span>Suggest a Board</span>
-                </div>
-                <div class="sidemenu__footer--love">
-                    <span>made with ❤ in Germany</span>
-                </div>
-            </div>
-        </div>
-
+        <bm-sidemenu v-ref:sidemenu></bm-sidemenu>
     </div>
 
-<script src="js/build.js"></script>
+<script src="js/app.js"></script>
 <script>
 	
 </script>

@@ -1,0 +1,54 @@
+@import 'src/sass/colors';
+
+@font-face {
+  font-family: 'SanFranciscoDisplay-Bold';
+  src: url("/fonts/San Francisco Display/SanFranciscoDisplay-Bold.otf");
+}
+
+@font-face {
+  font-family: 'SanFranciscoDisplay-Regular';
+  src: url("/fonts/San Francisco Display/SanFranciscoDisplay-Regular.otf");
+}
+
+@font-face {
+  font-family: 'SanFranciscoDisplay-Semibold';
+  src: url("/fonts/San Francisco Display/SanFranciscoDisplay-Semibold.otf");
+}
+
+@font-face {
+  font-family: 'SanFranciscoDisplay-Light';
+  src: url("/fonts/San Francisco Display/SanFranciscoDisplay-Light.otf");
+}
+
+@font-face {
+  font-family: 'SanFranciscoDisplay-Ultralight';
+  src: url("/fonts/San Francisco Display/SanFranciscoDisplay-Ultralight.otf");
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-width: 1024px;
+  @include light-background-gradient;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: $mainBlue;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.content {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
