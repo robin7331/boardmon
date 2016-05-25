@@ -127,6 +127,9 @@
                 <div class="bm-sidemenu__footer__shares--item">
                     <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://boardmon.io" data-via="robin7331">Tweet</a>
                 </div>
+                <div class="bm-sidemenu__footer__shares--item">
+                  <a class="github-button" href="https://github.com/robin7331/boardmon" data-count-href="/robin7331/boardmon/stargazers" data-count-api="/repos/robin7331/boardmon#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star robin7331/boardmon on GitHub">Star</a>
+                </div>
             </div>
             <div class="bm-sidemenu__footer--suggest">
                 <a target="_blank" href="https://twitter.com/intent/tweet?text=@robin7331 Checkout this awesome board: "><span>Suggest a Board</span></a>
