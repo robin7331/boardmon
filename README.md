@@ -12,3 +12,9 @@ Feel free to make a pull request
 
 ## Stay in touch
 Follow me on Twitter [@robin7331](http://www.twitter.com/robin7331)
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
+
+Copyright (c) 2016 Robin Reiter
