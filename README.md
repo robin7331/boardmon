@@ -9,7 +9,7 @@
 This website was created to privide an easy way to find an appropriate development board for a microcontroller project. There are new boards released every day so how would you have a chance in finding the right one without boardmon.io 🙊
 
 ## Roadmap
-I'm planning to create an appropriate Webapp for suggesting, editing and removing boards. Editing the json file directly is $*%& !
+I'm planning to create an appropriate web app for suggesting, editing and removing boards. Editing the json file directly is $*%& !
 
 ## Suggest a board
 If you know about a board that might fit into this page you can create an issue [here](https://github.com/robin7331/boardmon/issues), edit the [database json](https://github.com/robin7331/boardmon/blob/master/firebase_db.json) and submit a pull request or simply shoot a tweet at [@robin7331](http://www.twitter.com/robin7331)
