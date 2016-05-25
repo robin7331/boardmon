@@ -8,6 +8,7 @@ Vue.config.debug = true;
 var Header = require('./components/Header.vue');
 var Sidemenu = require('./components/Sidemenu.vue');
 var Content = require('./components/Content.vue');
+var FirebaseConfig = require('../../firebase_config.js');
 
 
 
@@ -27,12 +28,7 @@ new Vue({
 
 	ready: function() {
 
-		var config = {
-			apiKey: "AIzaSyCbQKsvP7YycJY-YdiodmxmFSr1gCuTjdk",
-			authDomain: "project-6186819983200980107.firebaseapp.com",
-			databaseURL: "https://project-6186819983200980107.firebaseio.com",
-			storageBucket: "project-6186819983200980107.appspot.com",
-			};
+		var config = FirebaseConfig;
 		firebase.initializeApp(config);
 
 		var that = this;
