@@ -4,7 +4,6 @@
 
     .bm-slider-headline {
         text-align: center;
-        font-family: SanFranciscoDisplay-Light;
         font-size: 20px;
         color: $mainBlue;
         margin: 8px;

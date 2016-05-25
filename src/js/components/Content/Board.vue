@@ -33,7 +33,6 @@
 
     .bm-board__title {
         color: $mainBlue;
-        font-family: SanFranciscoDisplay-Regular;
         font-size: 28px;
         text-align: center;
         margin: 10px 4px;
@@ -41,7 +40,6 @@
 
     .bm-board__numbers {
         color: lighten($mainBlue, 20%);
-        font-family: SanFranciscoDisplay-Regular;
         font-size: 14px;
         text-align: center;
         margin: 10px 4px;
@@ -60,7 +58,6 @@
     }
 
     .bm-board__footer span {
-        font-family: SanFranciscoDisplay-Regular;
         font-size: 14px;
         color: #A8A8A8;
         margin: 2px 8px;

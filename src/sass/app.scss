@@ -1,35 +1,13 @@
 @import 'src/sass/colors';
 
-@font-face {
-  font-family: 'SanFranciscoDisplay-Bold';
-  src: url("/fonts/San Francisco Display/SanFranciscoDisplay-Bold.otf");
-}
 
-@font-face {
-  font-family: 'SanFranciscoDisplay-Regular';
-  src: url("/fonts/San Francisco Display/SanFranciscoDisplay-Regular.otf");
-}
-
-@font-face {
-  font-family: 'SanFranciscoDisplay-Semibold';
-  src: url("/fonts/San Francisco Display/SanFranciscoDisplay-Semibold.otf");
-}
-
-@font-face {
-  font-family: 'SanFranciscoDisplay-Light';
-  src: url("/fonts/San Francisco Display/SanFranciscoDisplay-Light.otf");
-}
-
-@font-face {
-  font-family: 'SanFranciscoDisplay-Ultralight';
-  src: url("/fonts/San Francisco Display/SanFranciscoDisplay-Ultralight.otf");
-}
 
 body, html {
   padding: 0;
   margin: 0;
   height: 100%;
   min-width: 1024px;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
   @include light-background-gradient;
 }
 

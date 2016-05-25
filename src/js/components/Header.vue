@@ -12,7 +12,6 @@
     .bm-header__description {
         flex: 1;
         text-align: center;
-        font-family: SanFranciscoDisplay-Regular;
         font-size: 26px;
         color: $mainBlue;
     }

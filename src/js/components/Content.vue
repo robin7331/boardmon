@@ -23,7 +23,7 @@
 
         props: {
             boards: []
-        },     
+        },
 
         components: {
             'bm-board': Board
@@ -31,4 +31,3 @@
 
     }
 </script>
-

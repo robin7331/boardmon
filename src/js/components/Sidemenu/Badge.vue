@@ -36,7 +36,6 @@
     }
 
     .bm-sidebar-badge span {
-        font-family: SanFranciscoDisplay-Light;
         font-size: 16px;
     }
 
@@ -84,4 +83,3 @@ module.exports = {
 }
 
 </script>
-

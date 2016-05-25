@@ -19,7 +19,6 @@
     }
 
     .bm-sidemenu__logo--caption {
-        font-family: SanFranciscoDisplay-Light;
         font-size: 21px;
         color: $mainBlue;
         display: flex;
@@ -50,13 +49,11 @@
     .bm-sidemenu__footer--suggest {
         margin: 8px 0;
         font-size: larger;
-        font-family: SanFranciscoDisplay-Medium;
         font-size: 26px;
         color: $mainBlue;
     }
 
     .bm-sidemenu__footer--love {
-        font-family: SanFranciscoDisplay-Light;
         font-size: 18px;
         color: $mainBlue;
     }
