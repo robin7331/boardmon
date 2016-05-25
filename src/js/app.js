@@ -1,6 +1,7 @@
 
 var Vue = require('vue');
 var _ = require('underscore');
+var firebase = require('firebase');
 
 Vue.config.debug = true;
 
@@ -20,79 +21,27 @@ new Vue({
 	},
 
 	data: {
-		boards: [
-            {
-                name: "Raspberry Pi",
-                released: "15.02.2016",
-                image: "https://cdn-reichelt.de/bilder/web/xxl_ws/A300/RASPBERRY_PI_B_PLUS_02.png",
-                features: [
-                    "analog_input", 
-                    "wifi"                            
-                ],
-                gpios: 10,
-                flash: 128,
-                ram: 16,
-                link: "https://www.raspberrypi.org/"
-            },
-            {
-                name: "Raspberry Pi",
-                released: "15.02.2016",
-                image: "https://cdn-reichelt.de/bilder/web/xxl_ws/A300/RASPBERRY_PI_B_PLUS_02.png",
-                features: [
-                    "analog_input", 
-                    "wifi"                            
-                ],
-                gpios: 4,
-                flash: 256,
-                ram: 4,
-                link: "https://www.raspberrypi.org/"
-            },
-            {
-                name: "Raspberry Pi",
-                released: "15.02.2016",
-                image: "https://cdn-reichelt.de/bilder/web/xxl_ws/A300/RASPBERRY_PI_B_PLUS_02.png",
-                features: [
-                    "analog_input", 
-                    "wifi"                            
-                ],
-                gpios: 2,
-                flash: 64,
-                ram: 8,
-                link: "https://www.raspberrypi.org/"
-            },
-            {
-                name: "Raspberry Pi",
-                released: "15.02.2016",
-                image: "https://cdn-reichelt.de/bilder/web/xxl_ws/A300/RASPBERRY_PI_B_PLUS_02.png",
-                features: [
-                    "analog_input", 
-                    "wifi"                            
-                ],
-                gpios: 16,
-                flash: 512,
-                ram: 10,
-                link: "https://www.raspberrypi.org/"
-            },
-            {
-                name: "Raspberry Pi",
-                released: "15.02.2016",
-                image: "https://cdn-reichelt.de/bilder/web/xxl_ws/A300/RASPBERRY_PI_B_PLUS_02.png",
-                features: [
-                    "analog_input", 
-                    "wifi"                            
-                ],
-                gpios: 0,
-                flash: 128,
-                ram: 64,
-                link: "https://www.raspberrypi.org/"
-            }
-        ],
-        matchingBoards: []
+		boards: [],
+		matchingBoards: []
 	},
 
 	ready: function() {
 
-		this.query();
+		var config = {
+			apiKey: "AIzaSyCbQKsvP7YycJY-YdiodmxmFSr1gCuTjdk",
+			authDomain: "project-6186819983200980107.firebaseapp.com",
+			databaseURL: "https://project-6186819983200980107.firebaseio.com",
+			storageBucket: "project-6186819983200980107.appspot.com",
+			};
+		firebase.initializeApp(config);
+
+		var that = this;
+		firebase.database().ref('/boards/').once('value').then(function(snapshot) {
+			  that.boards = snapshot.val();
+			  that.query();
+		});
+
+
 	},
 
     methods: {
@@ -124,8 +73,3 @@ new Vue({
     	},
     }
 });
-
-
-	
-
-    

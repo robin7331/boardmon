@@ -82,7 +82,7 @@
         </div>
 
         <div class="bm-board__footer">
-            <span>{{ boardData.released }}</span>
+            <span>released {{ boardData.released }}</span>
         </div>
 
     </div>
@@ -101,8 +101,8 @@
                 released: "15.02.2016",
                 image: "",
                 features: [
-                    "analog_input", 
-                    "wifi"                            
+                    "analog_input",
+                    "wifi"
                 ],
                 gpios: 0,
                 flash: 128,
@@ -118,4 +118,3 @@
         }
     }
 </script>
-

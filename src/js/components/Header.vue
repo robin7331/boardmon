@@ -23,11 +23,30 @@
 <template>
     <div class="bm-header">
         <div class="bm-header__description">
-            <span>210 Boards found</span>
+            <span>{{ boardCount }}</span>
         </div>
     </div>
 </template>
 
 <script>
-module.exports = {}
+module.exports = {
+
+   props: {
+      totalBoardCount: {
+           type: Number,
+           default: 0
+      }
+   },
+   computed: {
+      boardCount: function() {
+         if (this.totalBoardCount > 1) {
+            return this.totalBoardCount + " boards found";
+         } else if (this.totalBoardCount == 1) {
+            return "1 board found";
+         } else {
+            return "No boards found that mach your filter"
+         }
+      }
+   },
+}
 </script>

@@ -95,7 +95,8 @@ module.exports = {
             if (currentValue === undefined) {
                 vm.currentValue = 0;
             }
-            vm.currentValue = parseInt(currentValue.get());
+
+            vm.currentValue = vm.steps[parseInt(currentValue.get())];
 
             vm.$dispatch('slider-value-changed');
         });

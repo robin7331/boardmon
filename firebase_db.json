@@ -1,0 +1,56 @@
+{
+   "boards": [
+      {
+          "name": "Raspberry Pi",
+          "released": "15.02.2016",
+          "image": "https://cdn-reichelt.de/bilder/web/xxl_ws/A300/RASPBERRY_PI_B_PLUS_02.png",
+          "features": [
+              "analog_input",
+              "wifi"
+          ],
+          "gpios": 10,
+          "flash": 128,
+          "ram": 16,
+          "link": "https://www.raspberrypi.org/"
+      },
+      {
+          "name": "Raspberry Pi",
+          "released": "15.02.2016",
+          "image": "https://cdn-reichelt.de/bilder/web/xxl_ws/A300/RASPBERRY_PI_B_PLUS_02.png",
+          "features": [
+              "analog_input",
+              "wifi"
+          ],
+          "gpios": 10,
+          "flash": 128,
+          "ram": 16,
+          "link": "https://www.raspberrypi.org/"
+      },
+      {
+          "name": "Raspberry Pi",
+          "released": "15.02.2016",
+          "image": "https://cdn-reichelt.de/bilder/web/xxl_ws/A300/RASPBERRY_PI_B_PLUS_02.png",
+          "features": [
+              "analog_input",
+              "wifi"
+          ],
+          "gpios": 10,
+          "flash": 128,
+          "ram": 16,
+          "link": "https://www.raspberrypi.org/"
+      },
+      {
+          "name": "Raspberry Pi",
+          "released": "15.02.2016",
+          "image": "https://cdn-reichelt.de/bilder/web/xxl_ws/A300/RASPBERRY_PI_B_PLUS_02.png",
+          "features": [
+              "analog_input",
+              "wifi"
+          ],
+          "gpios": 10,
+          "flash": 128,
+          "ram": 16,
+          "link": "https://www.raspberrypi.org/"
+      }
+   ]
+}
