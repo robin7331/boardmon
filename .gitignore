@@ -4,3 +4,4 @@ bower_components/
 public/css/
 public/js/
 firebase_config.js
+.firebaserc
